@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app='example'>
+
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+</head>
+
+<body>
+
+  <div ng-controller='MainController as mainVm'>
+
+    <business-card person='mainVm.user' tag-line='{{mainVm.line}}'></business-card>
+      <business-card person='mainVm.manager' log-fn='mainVm.logger()' ></business-card>
+  </div>
+  
+<script src="https://code.angularjs.org/1.5.8/angular.js"></script>
+<script src="script.js"></script>
+</body>
+
+</html>

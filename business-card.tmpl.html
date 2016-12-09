@@ -1,0 +1,17 @@
+<div class='businesscard'>
+  <div class='row'>
+    <div class='col-xs-6'>
+      <h4></h4>
+      <p>{{person.company.name}}</p>
+      <p>{{person.firstName}} {{person.lastname}}</p>
+      <p>{{person.email}}</p>
+      <p>{{person.address.city}} ,{{person.address.state}}</p>
+      <p>{{tagLine}}</p>
+    </div>
+    <div class='col-xs-6'>
+      <a href='#' class='thumbnail'>
+        <img ng-src='{{person.profilePic}}'>
+      </a>
+    </div>
+  </div>
+</div>
